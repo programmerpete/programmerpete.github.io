@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Information</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        .message {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p class="message">A phishing example that plays on habits that we are all used to after living through Covid times.</p>
+    <script>
+        function getSessionInfo() {
+            const browserInfo = {
+                userAgent: navigator.userAgent,
+                platform: navigator.platform,
+                language: navigator.language,
+                cookieEnabled: navigator.cookieEnabled,
+                screenWidth: screen.width,
+                screenHeight: screen.height,
+                windowWidth: window.innerWidth,
+                windowHeight: window.innerHeight
+            };
+            console.log(browserInfo);
+        }
+
+        getSessionInfo();
+    </script>
+</body>
+</html>
